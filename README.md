@@ -55,9 +55,13 @@ scripts/             migrate.mjs(원본 이전용, 재실행 불필요) · check
 1. **GitHub OAuth App 생성** — `/admin` 로그인에 필요. GitHub → Settings →
    Developer settings → OAuth Apps → New OAuth App. Homepage/callback URL은
    Sveltia CMS 최신 문서를 확인해서 넣을 것. 발급된 Client ID/Secret은 Vercel
-   프로젝트 환경변수에 등록한다.
-2. **Vercel ↔ GitHub 저장소 자동 연동** — `vercel git connect`가 이 세션에서는
-   권한 문제로 실패했다. Vercel 대시보드에서 프로젝트 → Settings → Git 에서
-   `SuperRPM/ai-blog`를 직접 연결하면 이후 push마다 자동 배포된다. 연동 전까지는
-   `vercel --prod`로 수동 배포한다.
-3. **Google Search Console** 등록 + `sitemap.xml` 제출 (선택).
+   프로젝트 → Settings → Environments → Production 안의 환경변수 등록 화면에
+   `OAUTH_CLIENT_ID` / `OAUTH_CLIENT_SECRET` 로 등록한다. (2026-08-27 진행 중)
+2. **Vercel ↔ GitHub 저장소 자동 연동** — 완료. (2026-08-27) 이제 `main` push마다
+   자동 배포된다.
+3. **나중에 할 일 — Google Search Console 등록 + `sitemap.xml` 제출.**
+   급하지 않다. 사이트는 이거 없어도 정상 작동하고, 이건 구글 검색 결과 노출을
+   앞당기는 용도일 뿐이다. `app/sitemap.ts`가 이미 사이트맵을 자동 생성하고 있으니
+   등록만 하면 된다. 하는 법: https://search.google.com/search-console 에서
+   배포 도메인(`ai-blog-ten-swart.vercel.app` 또는 커스텀 도메인) 추가 → 소유 확인
+   → Sitemaps 메뉴에서 `sitemap.xml` 제출.
