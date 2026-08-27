@@ -7,16 +7,21 @@
   --bg-0:#080A1A; --bg-1:#0D1030; --surface:#151A42; --surface-2:#1E2559;
   --navy:#1A1E5C; --blue:#0A57D3; --mint:#0FBD95; --orange:#FE9E03;
   --flow:linear-gradient(100deg,var(--blue),var(--mint));
-  --txt:#EBEEFF; --txt-dim:#9AA2CE; --txt-mute:#5C6499;
+  --txt:#EBEEFF; --txt-dim:#9AA2CE; --txt-mute:#8891C0;
   --line:#2A3170; --line-strong:#3A4290;
   --r-s:9px; --r-m:15px; --r-l:22px;
   --read:720px;
   --ease:cubic-bezier(.22,1,.36,1);
 }
+/* light is the default reading theme; dark is opt-in via the toggle (persisted in localStorage) */
 :root[data-theme="light"]{
   --bg-0:#f6f7fb; --bg-1:#eceffa; --surface:#ffffff; --surface-2:#eef1fa;
-  --txt:#14183a; --txt-dim:#454d75; --txt-mute:#767ea6;
+  --txt:#14183a; --txt-dim:#454d75; --txt-mute:#565D8C;
   --line:#dee3f2; --line-strong:#c4cbe6;
+  /* mint/orange are used as background accents (thumbs, chips) AND as small foreground
+     text (labels, links) — the base hues are too light for 4.5:1 text contrast on a
+     white/near-white background, so darken them only where the theme is light. */
+  --mint:#087a5f; --orange:#8f5900;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}

@@ -28,7 +28,7 @@ function toggleTheme() {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" data-theme="dark">
+    <html lang="ko" data-theme="light">
       <head>
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <link
