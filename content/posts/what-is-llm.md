@@ -8,6 +8,7 @@ order: 1
 min: 6
 asof: "2026-08"
 draft: false
+slug: "what-is-llm"
 tldr: "파운데이션 모델은 특정 업무용으로 만든 게 아니라 **아무 일에나 얹어 쓰는 바닥재**입니다. LLM은 그중 말을 다루는 것이고, ChatGPT나 Claude는 모델이 아니라 **그 모델을 감싼 서비스**입니다."
 forwho:
   yes: "AI를 써 봤는데 \"모델\", \"GPT\", \"LLM\"이 각각 무엇을 가리키는지 헷갈리는 분"

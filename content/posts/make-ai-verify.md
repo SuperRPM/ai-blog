@@ -8,6 +8,7 @@ order: 12
 min: 6
 asof: "2026-08"
 draft: false
+slug: "make-ai-verify"
 tldr: "한 번에 맞히기를 기대하지 말고 **만들고 → 확인하고 → 고치는 루프**를 만드십시오. 확인할 수 없는 일은 애초에 맡길 수 없습니다."
 forwho:
   yes: "AI 결과를 매번 처음부터 다시 검토하느라 시간이 더 드는 분"

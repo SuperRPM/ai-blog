@@ -8,6 +8,7 @@ order: 25
 min: 0
 asof: "2026-08"
 draft: true
+slug: "stock-analysis-coming"
 tldr: ""
 todo: []
 ---

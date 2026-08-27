@@ -1,0 +1,86 @@
+backend:
+  name: github
+  repo: SuperRPM/ai-blog
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: posts
+    label: 글
+    label_singular: 글
+    folder: content/posts
+    create: true
+    slug: '{{fields.slug}}'
+    identifier_field: title
+    summary: '[{{cat}}·{{level}}] {{title}}'
+    sortable_fields: [level, order, title]
+    view_groups:
+      - { label: 난이도, field: level }
+      - { label: 주제, field: cat }
+    fields:
+      - { name: title, label: 제목, widget: string }
+      - { name: sub, label: 부제, widget: string }
+      - { name: excerpt, label: 카드 요약, widget: text }
+      - name: cat
+        label: 주제
+        widget: select
+        options:
+          - { label: 'A · AI는 어떻게 동작하나', value: A }
+          - { label: 'B · 무엇을 쓰고 얼마를 쓰나', value: B }
+          - { label: 'C · 잘 쓰는 법', value: C }
+          - { label: 'D · 에이전트', value: D }
+          - { label: 'E · 실사용 후기', value: E }
+      - name: level
+        label: 난이도
+        widget: select
+        options:
+          - { label: '0 · 처음 (첫 화면 질문 목록)', value: 0 }
+          - { label: '1 · 기초', value: 1 }
+          - { label: '2 · 입문', value: 2 }
+          - { label: '3 · 초급', value: 3 }
+          - { label: '4 · 중급', value: 4 }
+      - { name: order, label: 순서(같은 난이도 안에서), widget: number, value_type: int }
+      - { name: min, label: 읽는 시간(분), widget: number, value_type: int }
+      - { name: asof, label: 기준 시점, widget: string, default: '2026-08' }
+      - { name: draft, label: 준비 중(흐린 카드로만 표시), widget: boolean, default: false }
+      - { name: tldr, label: 한 줄 답, widget: markdown, modes: [raw] }
+      - name: forwho
+        label: 이 글은 / 이 글이 아닌
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { name: 'yes', label: 이 글은, widget: text }
+          - { name: 'no', label: 이 글이 아닌, widget: text }
+      - name: myth
+        label: 흔한 오해
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { name: said, label: 사람들이 하는 말, widget: text }
+          - { name: real, label: 실제, widget: markdown, modes: [raw] }
+      - { name: todo, label: '그래서 뭘 하면 되나', widget: list, field: { name: item, widget: markdown, modes: [raw] } }
+      - { name: body, label: 본문, widget: markdown }
+      - { name: slug, label: 'URL(영문, 한 번 정하면 바꾸지 말 것)', widget: string, pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·하이픈만'] }
+
+  - name: settings
+    label: 설정
+    files:
+      - name: glossary
+        label: 용어 사전
+        file: content/glossary.yml
+        fields:
+          - name: groups
+            widget: list
+            fields:
+              - { name: name, label: 그룹 이름, widget: string }
+              - name: terms
+                widget: list
+                fields:
+                  - { name: term, label: 용어, widget: string }
+                  - { name: en, label: 영문 표기, widget: string, required: false }
+                  - { name: desc, label: 설명, widget: markdown, modes: [raw] }
+                  - { name: link, label: '연결할 글 slug', widget: string, required: false }

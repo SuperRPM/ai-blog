@@ -8,6 +8,7 @@ order: 7
 min: 7
 asof: "2026-08"
 draft: false
+slug: "where-tokens-go"
 tldr: "사용량은 **내가 방금 쓴 질문 길이가 아니라 대화가 얼마나 쌓였는지**에 비례합니다. 매 턴마다 지금까지의 대화 전체를 다시 읽기 때문입니다."
 forwho:
   yes: "짧게 몇 번 물었는데 사용량 경고를 본 분"

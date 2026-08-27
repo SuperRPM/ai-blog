@@ -8,6 +8,7 @@ order: 24
 min: 0
 asof: "2026-08"
 draft: true
+slug: "household-agent-coming"
 tldr: ""
 todo: []
 ---

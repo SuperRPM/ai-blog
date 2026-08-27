@@ -8,6 +8,7 @@ order: 21
 min: 3
 asof: "2026-08"
 draft: false
+slug: "is-it-worth-paying"
 tldr: "무료로 써 보고 판단하면 대개 틀립니다. **무료에서 잠기는 것들이 하필 쓸모 있는 기능**이라서, 그 상태로 내린 평가는 평가가 되지 못합니다."
 myth:
   said: "무료로 써 봤는데 별거 없었어요"

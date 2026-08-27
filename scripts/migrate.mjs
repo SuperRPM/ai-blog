@@ -233,6 +233,7 @@ function buildFrontmatter(fm) {
   lines.push(`min: ${fm.min}`);
   lines.push(`asof: ${yamlStr(fm.asof)}`);
   lines.push(`draft: ${fm.draft}`);
+  lines.push(`slug: ${yamlStr(fm.slug)}`);
   lines.push(`tldr: ${yamlStr(fm.tldr || '')}`);
   if (fm.forwho) {
     lines.push(`forwho:`);
@@ -279,6 +280,7 @@ for (const p of POSTS) {
     min: p.min,
     asof: p.asof,
     draft: false,
+    slug: p.slug,
     tldr,
     forwho,
     myth,
@@ -305,6 +307,7 @@ COMING.forEach((c, i) => {
     min: 0,
     asof: '2026-08',
     draft: true,
+    slug,
     tldr: '',
     forwho: null,
     myth: null,

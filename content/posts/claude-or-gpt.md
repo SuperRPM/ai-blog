@@ -8,6 +8,7 @@ order: 16
 min: 4
 asof: "2026-08"
 draft: false
+slug: "claude-or-gpt"
 tldr: "**둘 다 서비스 이름입니다.** ChatGPT는 OpenAI라는 회사가 만든 것, Claude는 Anthropic이라는 회사가 만든 것. 쓰는 방법도 거의 같습니다."
 myth:
   said: "둘 중에 하나가 더 좋은 거죠?"

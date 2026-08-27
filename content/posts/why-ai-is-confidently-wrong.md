@@ -8,6 +8,7 @@ order: 2
 min: 6
 asof: "2026-08"
 draft: false
+slug: "why-ai-is-confidently-wrong"
 tldr: "모르는 자리를 빈칸으로 두지 않고 **그럴듯한 형태로 채우기** 때문입니다. 말투의 자신감은 정확도와 아무 상관이 없습니다. 그건 학습한 문체일 뿐입니다."
 forwho:
   yes: "AI 답을 그대로 썼다가 나중에 틀린 걸 발견한 경험이 있는 분"
