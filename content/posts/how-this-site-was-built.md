@@ -149,6 +149,32 @@ todo:
 세 가지 다 **AI가 못해서 생긴 게 아닙니다.**
 제가 무엇을 원하는지 늦게 정해서 생긴 일입니다.
 
+## 9단계 · 배포까지도 손을 떼고 맡겨 봤다
+
+화면을 다 만든 뒤에는 다른 문제가 남았습니다. **이걸 인터넷에 올리는 일**입니다.
+저장소를 새로 만들고, 배포 서비스에 연결하고, 로그인 인증까지 붙이는 과정인데,
+이건 대화창에서 글을 쓰는 것과는 종류가 다른 일입니다 — 명령줄 도구를 쓰고,
+계정에 로그인하고, 여러 화면을 오가며 설정값을 넣어야 합니다.
+
+여기서 한 일은 **제가 할 수 없는 것만 남기고 나머지를 전부 넘긴 것**입니다.
+계정 로그인처럼 사람만 할 수 있는 절차 몇 가지를 빼면, 저장소 생성부터
+빌드 확인, 실제 서비스 등록, 배포까지는 명령줄 도구 몇 개만 미리 연결해 두니
+거의 개입 없이 끝까지 진행됐습니다. 중간에 화면이 깨지거나 설정이 어긋난 곳은
+스스로 원인을 찾아 고치고, 사람 손이 꼭 필요한 순간에만 알려 왔습니다.
+
+정리하면 이렇습니다.
+
+- **제가 한 일** — 서비스 계정에 로그인하는 것, 인증에 필요한 값 몇 개를 발급받아
+  화면에 붙여넣는 것. 전부 저 말고는 아무도 대신할 수 없는 절차들입니다
+- **넘긴 일** — 저장소를 만들고 파일을 옮기고, 빌드가 되는지 확인하고,
+  실제로 접속되는 주소로 올리는 것까지
+
+한 번에 되지도 않았습니다. 인증 절차 하나는 처음 안내가 잘못돼서 오류가 났고,
+값 이름 하나를 잘못 넣어서 다시 발급받은 적도 있습니다. 그런데 그 과정도
+"안 된다"는 사실과 원인 후보를 짚어 주는 선에서 끝났지, 처음부터 다시
+설명해야 하는 일은 없었습니다. **사람이 할 일과 도구가 할 일을 미리 갈라 두면,
+남는 건 사람만 할 수 있는 몇 번의 클릭뿐**이라는 걸 배포 과정에서 다시 확인했습니다.
+
 ## 다시 만든다면
 
 <Stack data="W3siayI6Iuq3uOuMgOuhnCDtlZjqsqDri6QiLCJkIjoi6rOo6rKp7J2EIOuovOyggCDrqrsg67CV6riwLiAyMe2OuOydtCDqsJnsnYAg66qo7JaR7Jy866GcIOuCmOyYqCDsnbTsnKDqsIAg7J206rKD7J2064ukIn0seyJrIjoi642UIOuovOyggCDtlZjqsqDri6QiLCJkIjoi7ZmV7J247ZWY64qUIOuPhOq1rCDrp4zrk6TquLAuIOuSpOuKpuqyjCDrp4zrk6TslrTshJwg6re47KCE7JeQIOuGk+y5nCDqsowg7J6I7JeI64ukIn0seyJrIjoi7LKY7J2M7JeQIOygle2VmOqyoOuLpCIsImQiOiLssqsg7ZmU66m07J2EIOuzvCDsgqzrnowg7ZWcIOuqhS4g662J6rCc6rOgIOyLnOyeke2VtOyEnCDrkZAg67KIIOyXjuyXiOuLpCJ9LHsiayI6IuuvuOujqOqyoOuLpCIsImQiOiLrtoTrpZguIOq4gCDsl7Qg7Y647J20IOyMk+yduCDrkqTsl5Ag7KCV7ZWY64qUIOqyjCDrp57slZjri6QifV0=" cap={"네 줄 다 \"무엇을 만들지 정하는\" 이야기고, \"어떻게 만드는지\"는 없다"} />
