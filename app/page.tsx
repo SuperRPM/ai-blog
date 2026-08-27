@@ -1,69 +1,70 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import type { Metadata } from "next";
+import TopBar from "@/components/TopBar";
+import QuestionList from "@/components/QuestionList";
+import Gallery from "@/components/Gallery";
+import {
+  getQuestions,
+  getGridPosts,
+  getComingCards,
+  getAvailableCats,
+  getAvailableLevels,
+} from "@/lib/posts";
 
-export default function Home() {
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
+
+export default function HomePage() {
+  const questions = getQuestions();
+  const gridPosts = getGridPosts();
+  const coming = getComingCards();
+  const availableCats = getAvailableCats();
+  const availableLevels = getAvailableLevels();
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <TopBar />
+      <header className="hero">
+        <h1>
+          AI, <span className="grad">뭐부터 물어봐야</span> 할지
+          <br />
+          모르겠다면.
+        </h1>
+        <p>
+          처음 오신 분들이 실제로 가장 많이 하는 질문부터 답했습니다. 한 편 3~4분, 어려운 말은
+          쓰지 않았습니다.
+        </p>
+      </header>
+
+      <section className="qwrap">
+        <div className="qhead">
+          이런 게 <span className="mint">궁금하셨나요?</span>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        <QuestionList questions={questions} />
+      </section>
+
+      <div className="secline">
+        <div className="st">차근차근 읽고 싶다면</div>
+        <p>개념 하나에 글 하나. 순서대로 읽으면 기초 → 입문 → 초급으로 이어집니다.</p>
+      </div>
+
+      <Gallery
+        posts={gridPosts}
+        coming={coming}
+        availableCats={availableCats}
+        availableLevels={availableLevels}
+      />
+
+      <footer className="foot">
+        모르는 말이 나오면{" "}
+        <a href="/glossary" style={{ color: "var(--mint)", fontWeight: 700 }}>
+          용어 사전
+        </a>
+        을 보십시오.
+        <br />
+        글에 적힌 모델 이름·요금·기능은 각 글 상단의 기준 시점 당시 내용입니다. 이 분야는 빠르게
+        바뀝니다.
+      </footer>
+    </>
   );
 }

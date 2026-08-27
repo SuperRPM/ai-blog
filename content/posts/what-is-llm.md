@@ -51,7 +51,7 @@ todo:
 
 이걸 구분하지 않으면 대화가 계속 어긋납니다. 우리가 실제로 만지는 건 모델이 아니라 **모델을 감싼 앱**입니다.
 
-<Flow steps={[{ t: "파운데이션 모델", d: "말을 이어 붙이는 엔진" }, { t: "감싸는 것들", d: "기본 지시 · 도구 · 파일 · 대화 보관" }, { t: "우리가 쓰는 서비스", d: "앱 · 웹 · 데스크톱", hl: true }]} cap="같은 모델이라도 감싸는 것이 다르면 결과가 다르다" />
+<Flow data="W3sidCI6Iu2MjOyatOuNsOydtOyFmCDrqqjrjbgiLCJkIjoi66eQ7J2EIOydtOyWtCDrtpnsnbTripQg7JeU7KeEIn0seyJ0Ijoi6rCQ7Iu464qUIOqyg+uTpCIsImQiOiLquLDrs7gg7KeA7IucIMK3IOuPhOq1rCDCtyDtjIzsnbwgwrcg64yA7ZmUIOuztOq0gCJ9LHsidCI6IuyasOumrOqwgCDsk7DripQg7ISc67mE7IqkIiwiZCI6IuyVsSDCtyDsm7kgwrcg642w7Iqk7YGs7YaxIiwiaGwiOnRydWV9XQ==" cap={"같은 모델이라도 감싸는 것이 다르면 결과가 다르다"} />
 
 그래서 "이게 더 좋다"는 이야기가 자주 엇갈립니다. 한 사람은 무료 등급의 작은 모델을 이야기하고,
 다른 사람은 유료 등급에서 도구까지 붙여 쓴 경험을 이야기합니다. **같은 이름을 말하지만 같은 것을 쓴 게 아닙니다.**

@@ -150,4 +150,4 @@ todo:
 
 ## 다시 만든다면
 
-<Stack rows={[{ k: "그대로 하겠다", d: "골격을 먼저 못 박기. 21편이 같은 모양으로 나온 이유가 이것이다" }, { k: "더 먼저 하겠다", d: "확인하는 도구 만들기. 뒤늦게 만들어서 그전에 놓친 게 있었다" }, { k: "처음에 정하겠다", d: "첫 화면을 볼 사람 한 명. 뭉개고 시작해서 두 번 엎었다" }, { k: "미루겠다", d: "분류. 글 열 편이 쌓인 뒤에 정하는 게 맞았다" }]} cap="네 줄 다 \"무엇을 만들지 정하는\" 이야기고, \"어떻게 만드는지\"는 없다" />
+<Stack data="W3siayI6Iuq3uOuMgOuhnCDtlZjqsqDri6QiLCJkIjoi6rOo6rKp7J2EIOuovOyggCDrqrsg67CV6riwLiAyMe2OuOydtCDqsJnsnYAg66qo7JaR7Jy866GcIOuCmOyYqCDsnbTsnKDqsIAg7J206rKD7J2064ukIn0seyJrIjoi642UIOuovOyggCDtlZjqsqDri6QiLCJkIjoi7ZmV7J247ZWY64qUIOuPhOq1rCDrp4zrk6TquLAuIOuSpOuKpuqyjCDrp4zrk6TslrTshJwg6re47KCE7JeQIOuGk+y5nCDqsowg7J6I7JeI64ukIn0seyJrIjoi7LKY7J2M7JeQIOygle2VmOqyoOuLpCIsImQiOiLssqsg7ZmU66m07J2EIOuzvCDsgqzrnowg7ZWcIOuqhS4g662J6rCc6rOgIOyLnOyeke2VtOyEnCDrkZAg67KIIOyXjuyXiOuLpCJ9LHsiayI6IuuvuOujqOqyoOuLpCIsImQiOiLrtoTrpZguIOq4gCDsl7Qg7Y647J20IOyMk+yduCDrkqTsl5Ag7KCV7ZWY64qUIOqyjCDrp57slZjri6QifV0=" cap={"네 줄 다 \"무엇을 만들지 정하는\" 이야기고, \"어떻게 만드는지\"는 없다"} />

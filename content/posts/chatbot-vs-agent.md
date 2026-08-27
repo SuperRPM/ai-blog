@@ -29,7 +29,7 @@ todo:
 | **반복** | 한 번 묻고 한 번 답한다 | 계획 → 실행 → 결과 확인 → 다음 행동을 **스스로** 반복한다 |
 | **끝** | 답을 하면 끝 | **목표에 닿았는지 판정**하고, 아니면 다시 한다 |
 
-<Flow steps={[{ t: "지시", d: "\"이거 해 줘\"" }, { t: "계획", d: "단계로 쪼갠다" }, { t: "실행", d: "도구를 쓴다" }, { t: "확인", d: "됐나? 아니면 ↺", hl: true }]} cap="이 되돌아오는 화살표 하나가 챗봇과 에이전트를 갈라놓는다" />
+<Flow data="W3sidCI6IuyngOyLnCIsImQiOiJcIuydtOqxsCDtlbQg7KSYXCIifSx7InQiOiLqs4Ttmo0iLCJkIjoi64uo6rOE66GcIOyqvOqwoOuLpCJ9LHsidCI6IuyLpO2WiSIsImQiOiLrj4Tqtazrpbwg7JO064ukIn0seyJ0Ijoi7ZmV7J24IiwiZCI6IuuQkOuCmD8g7JWE64uI66m0IOKGuiIsImhsIjp0cnVlfV0=" cap={"이 되돌아오는 화살표 하나가 챗봇과 에이전트를 갈라놓는다"} />
 
 ## 그래서 가능해지는 것
 
@@ -50,4 +50,4 @@ todo:
 
 기준은 단순합니다. **되돌릴 수 있는 것부터.**
 
-<Stack rows={[{ k: "바로 맡겨도 되는 것", d: "읽기, 초안 만들기, 사본 만들기, 정리해서 보여주기" }, { k: "확인 지점을 두는 것", d: "기존 파일 수정, 외부 시스템 조회, 대량 처리" }, { k: "사람이 누르는 것", d: "전송, 삭제, 결제, 대외 공개" }]} cap="이 선을 미리 그어 두지 않으면 사고 후에 그어야 한다" />
+<Stack data="W3siayI6IuuwlOuhnCDrp6Hqsqjrj4Qg65CY64qUIOqygyIsImQiOiLsnb3quLAsIOy0iOyViCDrp4zrk6TquLAsIOyCrOuzuCDrp4zrk6TquLAsIOygleumrO2VtOyEnCDrs7Tsl6zso7zquLAifSx7ImsiOiLtmZXsnbgg7KeA7KCQ7J2EIOuRkOuKlCDqsoMiLCJkIjoi6riw7KG0IO2MjOydvCDsiJjsoJUsIOyZuOu2gCDsi5zsiqTthZwg7KGw7ZqMLCDrjIDrn4kg7LKY66asIn0seyJrIjoi7IKs656M7J20IOuIhOultOuKlCDqsoMiLCJkIjoi7KCE7IahLCDsgq3soJwsIOqysOygnCwg64yA7Jm4IOqzteqwnCJ9XQ==" cap={"이 선을 미리 그어 두지 않으면 사고 후에 그어야 한다"} />

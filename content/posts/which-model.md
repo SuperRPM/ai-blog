@@ -53,7 +53,7 @@ todo:
 
 가장 실용적인 조합은 **1차는 작은 모델, 판단은 큰 모델**입니다.
 
-<Flow steps={[{ t: "Haiku", d: "100건을 걸러 10건으로" }, { t: "Sonnet", d: "10건을 정리·작성" }, { t: "Opus", d: "최종 판단·검토", hl: true }]} cap="전부 최상위로 돌리면 10배 느리고 결과는 비슷하다" />
+<Flow data="W3sidCI6IkhhaWt1IiwiZCI6IjEwMOqxtOydhCDqsbjrn6wgMTDqsbTsnLzroZwifSx7InQiOiJTb25uZXQiLCJkIjoiMTDqsbTsnYQg7KCV66aswrfsnpHshLEifSx7InQiOiJPcHVzIiwiZCI6Iuy1nOyihSDtjJDri6jCt+qygO2GoCIsImhsIjp0cnVlfV0=" cap={"전부 최상위로 돌리면 10배 느리고 결과는 비슷하다"} />
 
 ## 이름은 바뀐다
 

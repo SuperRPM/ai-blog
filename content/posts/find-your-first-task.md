@@ -50,7 +50,7 @@ todo:
 
 ## 붙일 자리를 찾는 30분
 
-<Flow steps={[{ t: "10분", d: "지난 한 주 캘린더와 보낸 메일을 훑는다" }, { t: "10분", d: "반복된 일 세 개를 적는다" }, { t: "10분", d: "그중 **내가 판정할 수 있는** 하나를 고른다", hl: true }]} cap="고민해서 찾는 게 아니라, 이미 한 일을 되짚어서 찾는다" />
+<Flow data="W3sidCI6IjEw67aEIiwiZCI6IuyngOuCnCDtlZwg7KO8IOy6mOumsOuNlOyZgCDrs7Trgrgg66mU7J287J2EIO2bkeuKlOuLpCJ9LHsidCI6IjEw67aEIiwiZCI6IuuwmOuzteuQnCDsnbwg7IS4IOqwnOulvCDsoIHripTri6QifSx7InQiOiIxMOu2hCIsImQiOiLqt7jspJEgKirrgrTqsIAg7YyQ7KCV7ZWgIOyImCDsnojripQqKiDtlZjrgpjrpbwg6rOg66W464ukIiwiaGwiOnRydWV9XQ==" cap={"고민해서 찾는 게 아니라, 이미 한 일을 되짚어서 찾는다"} />
 
 고른 뒤에는 [명세 다섯 칸](/posts/spec-not-prompt)으로 적어서 시켜 보십시오.
 그리고 **중간에 손으로 마무리하지 마십시오.** 끝까지 맡겨 봐야 어디서 막히는지 보입니다.

@@ -26,7 +26,7 @@ todo:
 AI에게 손을 달아주려면 도구마다 연결을 만들어야 합니다. 그런데 AI 앱도 여러 개,
 붙일 도구도 여러 개입니다. 각자 다른 방식이면 **연결의 수가 곱셈으로 늘어납니다.**
 
-<Flow steps={[{ t: "규격 없을 때", d: "앱 5개 × 도구 10개  \n= 연결 50개를 따로" }, { t: "공통 규격이 있을 때", d: "앱 5개 + 도구 10개  \n= 15개만 만들면 서로 붙는다", hl: true }]} cap="MCP가 푼 문제는 성능이 아니라 조합의 문제다" />
+<Flow data="W3sidCI6Iuq3nOqyqSDsl4bsnYQg65WMIiwiZCI6IuyVsSA16rCcIMOXIOuPhOq1rCAxMOqwnCAgXG49IOyXsOqysCA1MOqwnOulvCDrlLDroZwifSx7InQiOiLqs7XthrUg6rec6rKp7J20IOyeiOydhCDrlYwiLCJkIjoi7JWxIDXqsJwgKyDrj4TqtawgMTDqsJwgIFxuPSAxNeqwnOunjCDrp4zrk6TrqbQg7ISc66GcIOu2meuKlOuLpCIsImhsIjp0cnVlfV0=" cap={"MCP가 푼 문제는 성능이 아니라 조합의 문제다"} />
 
 그래서 도구를 만드는 쪽은 한 번만 만들면 여러 AI 앱에서 쓰이고, 쓰는 쪽은 **목록에서 골라 붙이면** 됩니다.
 

@@ -47,7 +47,7 @@ todo:
 2. **반례를 찾게 한다** — "이 답이 틀렸다면 어디서 틀렸을지 세 가지를 먼저 적고, 그 다음에 최종 답을 내." 순서가 중요합니다
 3. **다른 방법으로 다시 풀게 한다** — 같은 결론이 나오는지 대조합니다. 계산이나 집계에서 특히 잘 듣습니다
 
-<Flow steps={[{ t: "만든다", d: "1차 결과" }, { t: "확인한다", d: "통과 조건 대조" }, { t: "고친다", d: "걸린 항목만" }, { t: "사람이 본다", d: "마지막 한 지점", hl: true }]} cap="사람의 검토를 없애는 게 아니라, 검토할 곳을 줄이는 것" />
+<Flow data="W3sidCI6IuunjOuToOuLpCIsImQiOiIx7LCoIOqysOqzvCJ9LHsidCI6Iu2ZleyduO2VnOuLpCIsImQiOiLthrXqs7wg7KGw6rG0IOuMgOyhsCJ9LHsidCI6IuqzoOy5nOuLpCIsImQiOiLqsbjrprAg7ZWt66qp66eMIn0seyJ0Ijoi7IKs656M7J20IOuzuOuLpCIsImQiOiLrp4jsp4Drp4kg7ZWcIOyngOygkCIsImhsIjp0cnVlfV0=" cap={"사람의 검토를 없애는 게 아니라, 검토할 곳을 줄이는 것"} />
 
 ## 사람이 봐야 하는 지점
 

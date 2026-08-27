@@ -34,14 +34,14 @@ todo:
 모델이 한 번에 볼 수 있는 양에는 한계가 있습니다. 그 한계를 컨텍스트 창이라고 부릅니다.
 책상 하나를 떠올리면 편합니다. 그 위에 이런 것들이 동시에 올라가 있어야 합니다.
 
-<Stack rows={[{ k: "1 · 기본 지시", d: "서비스가 미리 넣어 둔 규칙. 우리 눈에는 안 보인다" }, { k: "2 · 이전 대화 전체", d: "내가 한 말과 AI가 한 말, 처음부터 전부" }, { k: "3 · 붙인 자료", d: "문서, 이미지, 코드" }, { k: "4 · 지금 내 질문", d: "방금 입력한 것" }, { k: "5 · 답이 나갈 자리", d: "답도 이 책상 위에 써야 한다" }]} cap="다섯 개가 한 책상을 나눠 쓴다 — 하나가 커지면 다른 것의 자리가 줄어든다" />
+<Stack data="W3siayI6IjEgwrcg6riw67O4IOyngOyLnCIsImQiOiLshJzruYTsiqTqsIAg66+466asIOuEo+yWtCDrkZQg6rec7LmZLiDsmrDrpqwg64iI7JeQ64qUIOyViCDrs7Tsnbjri6QifSx7ImsiOiIyIMK3IOydtOyghCDrjIDtmZQg7KCE7LK0IiwiZCI6IuuCtOqwgCDtlZwg66eQ6rO8IEFJ6rCAIO2VnCDrp5AsIOyymOydjOu2gO2EsCDsoITrtoAifSx7ImsiOiIzIMK3IOu2meyduCDsnpDro4wiLCJkIjoi66y47IScLCDsnbTrr7jsp4AsIOy9lOuTnCJ9LHsiayI6IjQgwrcg7KeA6riIIOuCtCDsp4jrrLgiLCJkIjoi67Cp6riIIOyeheugpe2VnCDqsoMifSx7ImsiOiI1IMK3IOuLteydtCDrgpjqsIgg7J6Q66asIiwiZCI6IuuLteuPhCDsnbQg7LGF7IOBIOychOyXkCDsjajslbwg7ZWc64ukIn1d" cap={"다섯 개가 한 책상을 나눠 쓴다 — 하나가 커지면 다른 것의 자리가 줄어든다"} />
 
 ## 매 턴마다 전부 다시 읽는다
 
 여기가 핵심입니다. AI는 지난 대화를 **기억하고 있는 게 아니라**, 내가 새 질문을 할 때마다
 지금까지의 대화 전체를 함께 받아서 처음부터 다시 읽습니다.
 
-<Flow steps={[{ t: "1번째 질문", d: "질문 1" }, { t: "2번째", d: "질문 1 + 답 1 + 질문 2" }, { t: "3번째", d: "앞의 전부 + 질문 3" }, { t: "20번째", d: "앞의 전부 + 질문 20", hl: true }]} cap="짧게 물어도, 20번째 질문은 첫 질문보다 훨씬 무겁다" />
+<Flow data="W3sidCI6IjHrsojsp7gg7KeI66y4IiwiZCI6IuyniOusuCAxIn0seyJ0IjoiMuuyiOynuCIsImQiOiLsp4jrrLggMSArIOuLtSAxICsg7KeI66y4IDIifSx7InQiOiIz67KI7Ke4IiwiZCI6IuyVnuydmCDsoITrtoAgKyDsp4jrrLggMyJ9LHsidCI6IjIw67KI7Ke4IiwiZCI6IuyVnuydmCDsoITrtoAgKyDsp4jrrLggMjAiLCJobCI6dHJ1ZX1d" cap={"짧게 물어도, 20번째 질문은 첫 질문보다 훨씬 무겁다"} />
 
 그래서 **짧은 질문 하나가 비싼 요청이 될 수 있습니다.** 사용량은 내가 방금 쓴 글자 수가 아니라
 대화가 얼마나 쌓였는지에 비례합니다.

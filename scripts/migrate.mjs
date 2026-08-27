@@ -117,6 +117,15 @@ function removeDivByClass(html, className) {
   return html.slice(0, idx) + html.slice(end);
 }
 
+// NOTE: next-mdx-remote's `serialize()` (development/jsxDEV codepath) silently drops
+// array/object-literal JSX attribute values (a known incompatibility between
+// @mdx-js/mdx's dev JSX transform and estree-util-build-jsx). To sidestep this,
+// structured data for <Flow>/<Stack> is passed as a base64-encoded JSON string prop,
+// which the component decodes at render time.
+function toB64(obj) {
+  return Buffer.from(JSON.stringify(obj), 'utf8').toString('base64');
+}
+
 function convertFigs(html) {
   let s = html;
   // .flowr blocks
@@ -127,9 +136,9 @@ function convertFigs(html) {
           const hl = !!x[1];
           const t = inlineToMd(x[2].trim());
           const d = inlineToMd(x[3].trim());
-          return `{ t: ${JSON.stringify(t)}, d: ${JSON.stringify(d)}${hl ? ', hl: true' : ''} }`;
+          return hl ? { t, d, hl: true } : { t, d };
         });
-      return `\n<Flow steps={[${steps.join(', ')}]} cap=${JSON.stringify(inlineToMd(cap.trim()))} />\n`;
+      return `\n<Flow data="${toB64(steps)}" cap={${JSON.stringify(inlineToMd(cap.trim()))}} />\n`;
     });
   // .stack blocks
   s = s.replace(/<div class="fig">\s*<div class="stack">([\s\S]*?)<\/div>\s*<div class="cap">([\s\S]*?)<\/div>\s*<\/div>/g,
@@ -138,9 +147,9 @@ function convertFigs(html) {
         .map((x) => {
           const k = inlineToMd(x[1].trim());
           const d = inlineToMd(x[2].trim());
-          return `{ k: ${JSON.stringify(k)}, d: ${JSON.stringify(d)} }`;
+          return { k, d };
         });
-      return `\n<Stack rows={[${rows.join(', ')}]} cap=${JSON.stringify(inlineToMd(cap.trim()))} />\n`;
+      return `\n<Stack data="${toB64(rows)}" cap={${JSON.stringify(inlineToMd(cap.trim()))}} />\n`;
     });
   return s;
 }

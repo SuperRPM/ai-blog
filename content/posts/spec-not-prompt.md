@@ -35,7 +35,7 @@ todo:
 
 ## 다섯 칸
 
-<Stack rows={[{ k: "목표", d: "무엇이 끝난 상태인가 — \"결정사항 표 하나\"" }, { k: "재료", d: "무엇을 근거로 쓰는가 — \"붙인 회의록만. 추측 금지\"" }, { k: "판정 기준", d: "무엇을 보고 잘 됐다고 하는가 — \"누락 없음, 없는 결정 없음\"" }, { k: "금지", d: "하면 안 되는 것 — \"회의록에 없는 내용 추가 금지\"" }, { k: "산출물", d: "어떤 형식으로 — \"열 세 개인 표, 설명 문장 없이\"" }]} cap="다섯 칸을 채우는 데 2분이 걸리고, 다시 시키는 데 10분이 걸린다" />
+<Stack data="W3siayI6Iuuqqe2RnCIsImQiOiLrrLTsl4fsnbQg64Gd64KcIOyDge2DnOyduOqwgCDigJQgXCLqsrDsoJXsgqztla0g7ZGcIO2VmOuCmFwiIn0seyJrIjoi7J6s66OMIiwiZCI6IuustOyXh+ydhCDqt7zqsbDroZwg7JOw64qU6rCAIOKAlCBcIuu2meyduCDtmozsnZjroZ3rp4wuIOy2lOy4oSDquIjsp4BcIiJ9LHsiayI6Iu2MkOyglSDquLDspIAiLCJkIjoi66y07JeH7J2EIOuztOqzoCDsnpgg65CQ64uk6rOgIO2VmOuKlOqwgCDigJQgXCLriITrnb0g7JeG7J2MLCDsl4bripQg6rKw7KCVIOyXhuydjFwiIn0seyJrIjoi6riI7KeAIiwiZCI6Iu2VmOuptCDslYgg65CY64qUIOqygyDigJQgXCLtmozsnZjroZ3sl5Ag7JeG64qUIOuCtOyaqSDstpTqsIAg6riI7KeAXCIifSx7ImsiOiLsgrDstpzrrLwiLCJkIjoi7Ja065akIO2YleyLneycvOuhnCDigJQgXCLsl7Qg7IS4IOqwnOyduCDtkZwsIOyEpOuqhSDrrLjsnqUg7JeG7J20XCIifV0=" cap={"다섯 칸을 채우는 데 2분이 걸리고, 다시 시키는 데 10분이 걸린다"} />
 
 ## 판정 기준이 제일 중요한 이유
 

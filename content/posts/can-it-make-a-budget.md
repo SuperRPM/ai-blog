@@ -19,7 +19,7 @@ todo:
 
 ## "만든다"의 세 단계
 
-<Stack rows={[{ k: "1단계 · 오늘 바로 됨", d: "가계부 양식을 만들어 준다 — 항목·수식이 들어간 엑셀 파일까지" }, { k: "2단계 · 오늘 바로 됨", d: "내가 붙여 준 내역을 정리한다 — 카드 명세서를 붙이면 항목별로 나눠 준다" }, { k: "3단계 · 준비가 필요", d: "매달 알아서 가져와 갱신한다 — 통장·카드와 **연결**해야 한다" }]} cap="대부분의 사람이 3단계를 상상하고, 실제로 필요한 건 2단계다" />
+<Stack data="W3siayI6IjHri6jqs4Qgwrcg7Jik64qYIOuwlOuhnCDrkKgiLCJkIjoi6rCA6rOE67aAIOyWkeyLneydhCDrp4zrk6TslrQg7KSA64ukIOKAlCDtla3rqqnCt+yImOyLneydtCDrk6TslrTqsIQg7JeR7IWAIO2MjOydvOq5jOyngCJ9LHsiayI6IjLri6jqs4Qgwrcg7Jik64qYIOuwlOuhnCDrkKgiLCJkIjoi64K06rCAIOu2meyXrCDspIAg64K07Jet7J2EIOygleumrO2VnOuLpCDigJQg7Lm065OcIOuqheyEuOyEnOulvCDrtpnsnbTrqbQg7ZWt66qp67OE66GcIOuCmOuIoCDspIDri6QifSx7ImsiOiIz64uo6rOEIMK3IOykgOu5hOqwgCDtlYTsmpQiLCJkIjoi66ek64usIOyVjOyVhOyEnCDqsIDsoLjsmYAg6rCx7Iug7ZWc64ukIOKAlCDthrXsnqXCt+y5tOuTnOyZgCAqKuyXsOqysCoq7ZW07JW8IO2VnOuLpCJ9XQ==" cap={"대부분의 사람이 3단계를 상상하고, 실제로 필요한 건 2단계다"} />
 
 ## 오늘 바로 되는 것
 

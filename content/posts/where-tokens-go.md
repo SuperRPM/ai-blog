@@ -26,7 +26,7 @@ todo:
 [앞 글](/posts/tokens-and-context)에서 본 그 구조가 그대로 비용이 됩니다.
 새 질문을 할 때마다 이전 대화 전체가 함께 전송되니, 같은 내용이 몇 번이고 다시 계산됩니다.
 
-<Stack rows={[{ k: "턴 1", d: "질문 1 → 읽는 양: 1" }, { k: "턴 2", d: "질문1 + 답1 + 질문2 → 읽는 양: 3" }, { k: "턴 3", d: "앞의 전부 + 질문3 → 읽는 양: 5" }, { k: "턴 10", d: "앞의 전부 + 질문10 → 읽는 양: 19" }]} cap="대화 하나를 오래 붙잡고 있는 것이 가장 비싼 사용 방식이다" />
+<Stack data="W3siayI6Iu2EtCAxIiwiZCI6IuyniOusuCAxIOKGkiDsnb3ripQg7JaROiAxIn0seyJrIjoi7YS0IDIiLCJkIjoi7KeI66y4MSArIOuLtTEgKyDsp4jrrLgyIOKGkiDsnb3ripQg7JaROiAzIn0seyJrIjoi7YS0IDMiLCJkIjoi7JWe7J2YIOyghOu2gCArIOyniOusuDMg4oaSIOydveuKlCDslpE6IDUifSx7ImsiOiLthLQgMTAiLCJkIjoi7JWe7J2YIOyghOu2gCArIOyniOusuDEwIOKGkiDsnb3ripQg7JaROiAxOSJ9XQ==" cap={"대화 하나를 오래 붙잡고 있는 것이 가장 비싼 사용 방식이다"} />
 
 ## 무게가 큰 것들
 

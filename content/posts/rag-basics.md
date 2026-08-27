@@ -38,7 +38,7 @@ todo:
 질문이 들어오면 관련된 문서 조각만 찾아서, 질문과 함께 넣어 줍니다.
 모델은 그 조각을 읽고 답합니다. **모델을 바꾸는 게 아니라 책상 위에 자료를 올려 주는 것**입니다.
 
-<Flow steps={[{ t: "문서 쪼개기", d: "긴 문서를 조각으로" }, { t: "저장", d: "의미로 찾을 수 있게" }, { t: "찾기", d: "질문과 가까운 조각만" }, { t: "함께 넣기", d: "질문 + 조각 → 답", hl: true }]} cap="자료가 바뀌면 문서만 갈아 끼우면 된다 — 다시 학습시킬 일이 없다" />
+<Flow data="W3sidCI6IuusuOyEnCDsqrzqsJzquLAiLCJkIjoi6ri0IOusuOyEnOulvCDsobDqsIHsnLzroZwifSx7InQiOiLsoIDsnqUiLCJkIjoi7J2Y66+466GcIOywvuydhCDsiJgg7J6I6rKMIn0seyJ0Ijoi7LC+6riwIiwiZCI6IuyniOusuOqzvCDqsIDquYzsmrQg7KGw6rCB66eMIn0seyJ0Ijoi7ZWo6ruYIOuEo+q4sCIsImQiOiLsp4jrrLggKyDsobDqsIEg4oaSIOuLtSIsImhsIjp0cnVlfV0=" cap={"자료가 바뀌면 문서만 갈아 끼우면 된다 — 다시 학습시킬 일이 없다"} />
 
 이 방식을 RAG라고 부릅니다. 이름은 몰라도 되고, **"학습이 아니라 찾아서 넣는다"**만 기억하면 충분합니다.
 파일을 첨부해서 질문하는 것도 사실 같은 원리의 가장 단순한 형태입니다.
