@@ -26,24 +26,24 @@ const published = posts.filter((p) => !p.draft);
 const draft = posts.filter((p) => p.draft);
 const byOrder = (a, b) => a.level - b.level || a.order - b.order;
 
-check("22 published posts", published.length === 22);
+check("23 published posts", published.length === 23);
 check("2 draft cards", draft.length === 2);
 
 const questions = published.filter((p) => p.level === 0);
 check("7 question posts (level 0)", questions.length === 7);
 
 const grid = published.filter((p) => p.level >= 1);
-check("15 grid posts (level >= 1)", grid.length === 15);
-check("gallery card total = 17 (15 + 2 coming)", grid.length + draft.length === 17);
+check("16 grid posts (level >= 1)", grid.length === 16);
+check("gallery card total = 18 (16 + 2 coming)", grid.length + draft.length === 18);
 
-// level distribution: 기초6 입문4 초급4 중급3 (levels 1..4 among grid, level0 excluded)
+// level distribution: 기초6 입문5 초급4 중급3 (levels 1..4 among grid, level0 excluded)
 // §9 counts include coming (draft) cards in the level-4 bucket, since they render
-// as cards in the level-4 filter too.
+// as cards in the level-4 filter too. (2026-08-28: +1 level2/cat C post, finetuning-vs-rag)
 const byLevel = {};
 [...grid, ...draft].forEach((p) => (byLevel[p.level] = (byLevel[p.level] || 0) + 1));
 check(
-  "level distribution 1:6 2:4 3:4 4:3",
-  byLevel[1] === 6 && byLevel[2] === 4 && byLevel[3] === 4 && byLevel[4] === 3
+  "level distribution 1:6 2:5 3:4 4:3",
+  byLevel[1] === 6 && byLevel[2] === 5 && byLevel[3] === 4 && byLevel[4] === 3
 );
 
 // every cat that appears in grid+draft has >=1 result — i.e. no empty chip possible
@@ -72,18 +72,19 @@ for (const p of posts) {
   }
 }
 
-// slug 22 list matches PLAN §2
+// slug list: original 22 from PLAN §2 + posts added after migration
 const expectedSlugs = [
   "claude-or-gpt","how-to-ask","can-it-make-a-budget","stock-picks","where-does-my-text-go",
   "is-it-worth-paying","why-desktop-app","what-is-llm","why-ai-is-confidently-wrong",
   "tokens-and-context","free-vs-paid","what-not-to-feed","find-your-first-task","rag-basics",
   "why-claude","which-model","where-tokens-go","chatbot-vs-agent","what-is-mcp",
   "spec-not-prompt","make-ai-verify","how-this-site-was-built",
+  "finetuning-vs-rag", // added 2026-08-28
 ];
 const gotSlugs = published.map((p) => p.slug).sort();
 check(
-  "all 22 expected slugs present",
-  expectedSlugs.every((s) => gotSlugs.includes(s)) && gotSlugs.length === 22
+  "all 23 expected slugs present",
+  expectedSlugs.every((s) => gotSlugs.includes(s)) && gotSlugs.length === 23
 );
 
 // prev/next symmetry
