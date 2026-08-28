@@ -282,3 +282,41 @@ td b{color:var(--txt)}
   .thumb .tno{top:15px;right:18px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ============ 진단 퀴즈 ============ */
+.quizwrap{max-width:640px;margin:0 auto;padding:40px 24px 70px}
+.quizwrap h1{font-size:clamp(24px,3.4vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.28}
+.quizwrap>p.lead{margin-top:12px;font-size:15px;color:var(--txt-dim);line-height:1.6}
+.qz-progress{margin-top:28px;height:6px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.qz-progress-bar{height:100%;background:var(--flow);border-radius:99px;transition:width .3s var(--ease)}
+.qz-step{margin-top:10px;font-size:12.5px;font-weight:700;color:var(--txt-mute)}
+.qz-card{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-l);
+  padding:28px 26px}
+.qz-q{font-size:19px;font-weight:800;letter-spacing:-.015em;line-height:1.4}
+.qz-opts{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.qz-opt{text-align:left;font-family:inherit;font-size:14.5px;color:var(--txt);line-height:1.5;
+  background:var(--bg-0);border:1.5px solid var(--line);border-radius:var(--r-m);
+  padding:14px 16px;cursor:pointer;transition:border-color .15s,transform .15s}
+.qz-opt:hover{border-color:var(--mint);transform:translateX(2px)}
+.qz-back{margin-top:18px;font-size:13px;font-weight:700;color:var(--txt-mute);cursor:pointer;
+  background:none;border:none;font-family:inherit}
+.qz-back:hover{color:var(--mint)}
+.qz-result{margin-top:24px}
+.qz-tier{display:inline-block;font-size:12.5px;font-weight:800;letter-spacing:.02em;
+  color:#061024;background:var(--mint);border-radius:99px;padding:6px 14px}
+:root[data-theme="light"] .qz-tier{color:#04231b}
+.qz-result h2{margin-top:16px;font-size:26px;font-weight:800;letter-spacing:-.02em}
+.qz-result>p{margin-top:10px;font-size:15px;color:var(--txt-dim);line-height:1.6}
+.qz-recs{margin-top:26px;display:flex;flex-direction:column;gap:12px}
+.qz-rec{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-m);
+  padding:16px 18px;transition:border-color .15s,transform .15s}
+.qz-rec:hover{border-color:var(--mint);transform:translateX(2px)}
+.qz-rec .k{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--txt-mute)}
+.qz-rec .t{margin-top:5px;font-size:15.5px;font-weight:800;letter-spacing:-.01em}
+.qz-retry{margin-top:28px;font-size:13.5px;font-weight:700;color:var(--txt-mute);
+  background:none;border:none;cursor:pointer;font-family:inherit}
+.qz-retry:hover{color:var(--mint)}
+@media(max-width:640px){
+  .quizwrap{padding:28px 18px 50px}
+  .qz-card{padding:22px 18px}
+}

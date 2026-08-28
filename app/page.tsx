@@ -34,6 +34,22 @@ export default function HomePage() {
           처음 오신 분들이 실제로 가장 많이 하는 질문부터 답했습니다. 한 편 3~4분, 어려운 말은
           쓰지 않았습니다.
         </p>
+        <p style={{ marginTop: 14 }}>
+          <a
+            href="/quiz"
+            style={{
+              display: "inline-block",
+              fontWeight: 800,
+              fontSize: 14,
+              color: "var(--mint)",
+              border: "1.5px solid var(--mint)",
+              borderRadius: 99,
+              padding: "9px 18px",
+            }}
+          >
+            내 AI 활용 단계 진단해보기 →
+          </a>
+        </p>
       </header>
 
       <section className="qwrap">
