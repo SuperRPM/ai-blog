@@ -26,24 +26,26 @@ const published = posts.filter((p) => !p.draft);
 const draft = posts.filter((p) => p.draft);
 const byOrder = (a, b) => a.level - b.level || a.order - b.order;
 
-check("23 published posts", published.length === 23);
+check("24 published posts", published.length === 24);
 check("2 draft cards", draft.length === 2);
 
 const questions = published.filter((p) => p.level === 0);
 check("7 question posts (level 0)", questions.length === 7);
 
 const grid = published.filter((p) => p.level >= 1);
-check("16 grid posts (level >= 1)", grid.length === 16);
-check("gallery card total = 18 (16 + 2 coming)", grid.length + draft.length === 18);
+check("17 grid posts (level >= 1)", grid.length === 17);
+check("gallery card total = 19 (17 + 2 coming)", grid.length + draft.length === 19);
 
-// level distribution: 기초6 입문5 초급4 중급3 (levels 1..4 among grid, level0 excluded)
+// level distribution: 기초6 입문5 초급4 중급4 (levels 1..4 among grid, level0 excluded)
 // §9 counts include coming (draft) cards in the level-4 bucket, since they render
-// as cards in the level-4 filter too. (2026-08-28: +1 level2/cat C post, finetuning-vs-rag)
+// as cards in the level-4 filter too.
+// 2026-08-28: +1 level2/cat C post (finetuning-vs-rag)
+// 2026-08-29: +1 level4/cat E post (quota-incident)
 const byLevel = {};
 [...grid, ...draft].forEach((p) => (byLevel[p.level] = (byLevel[p.level] || 0) + 1));
 check(
-  "level distribution 1:6 2:5 3:4 4:3",
-  byLevel[1] === 6 && byLevel[2] === 5 && byLevel[3] === 4 && byLevel[4] === 3
+  "level distribution 1:6 2:5 3:4 4:4",
+  byLevel[1] === 6 && byLevel[2] === 5 && byLevel[3] === 4 && byLevel[4] === 4
 );
 
 // every cat that appears in grid+draft has >=1 result — i.e. no empty chip possible
@@ -80,11 +82,12 @@ const expectedSlugs = [
   "why-claude","which-model","where-tokens-go","chatbot-vs-agent","what-is-mcp",
   "spec-not-prompt","make-ai-verify","how-this-site-was-built",
   "finetuning-vs-rag", // added 2026-08-28
+  "quota-incident", // added 2026-08-29
 ];
 const gotSlugs = published.map((p) => p.slug).sort();
 check(
-  "all 23 expected slugs present",
-  expectedSlugs.every((s) => gotSlugs.includes(s)) && gotSlugs.length === 23
+  "all 24 expected slugs present",
+  expectedSlugs.every((s) => gotSlugs.includes(s)) && gotSlugs.length === 24
 );
 
 // prev/next symmetry
